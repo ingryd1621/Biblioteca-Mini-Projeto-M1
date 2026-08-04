@@ -2,6 +2,8 @@ import { dadosLivros } from "./dadosLivros.js";
 import { Livro } from "./Livro.js";
 import { listarLivros } from "./listarLivros.js";
 import { realizarEmprestimo } from "./realizarEmprestimo.js";
+import { realizarDevolucao } from "./realizarDevolucao.js";
+import { buscarLivro } from "./buscarLivro.js";
 import promptSync from "prompt-sync";
 
 const listaLivros = dadosLivros.map(
@@ -34,7 +36,8 @@ do {
       console.log();
       break;
     case 2:
-      console.log("opção 2");
+      const tituloBusca = prompt("Digite o título do livro: ");
+      buscarLivro(listaLivros, tituloBusca);
       console.log();
       break;
     case 3:
@@ -52,7 +55,8 @@ do {
       console.log();
       break;
     case 6:
-      console.log("opção 6");
+      const tituloDevolvido = prompt("Digite o título do livro: ");
+      realizarDevolucao(listaLivros, tituloDevolvido);
       console.log();
       break;
     case 7:
