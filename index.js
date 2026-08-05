@@ -4,6 +4,9 @@ import { listarLivros } from "./listarLivros.js";
 import { realizarEmprestimo } from "./realizarEmprestimo.js";
 import { realizarDevolucao } from "./realizarDevolucao.js";
 import { buscarLivro } from "./buscarLivro.js";
+import { listarDisponiveis } from "./listarDisponiveis.js";
+import { cadastrarLivro } from "./cadastrarLivro.js";
+import { exibirEstatisticas} from "./exibirEstatisticas.js";
 import promptSync from "prompt-sync";
 
 const listaLivros = dadosLivros.map(
@@ -17,7 +20,7 @@ let opcao;
 
 do {
   console.log("==================================");
-  console.log("SISTEMA DE BIBLIOTECA");
+  console.log("       SISTEMA DE BIBLIOTECA      ");
   console.log("==================================");
   console.log("1 - Listar livros");
   console.log("2 - Buscar livro");
@@ -41,11 +44,11 @@ do {
       console.log();
       break;
     case 3:
-      console.log("opção 3");
+      listarDisponiveis(listaLivros);
       console.log();
       break;
     case 4:
-      console.log("opção 4");
+      cadastrarLivro(listaLivros);
       console.log();
       break;
     case 5:
@@ -60,7 +63,7 @@ do {
       console.log();
       break;
     case 7:
-      console.log("Opção 7");
+      exibirEstatisticas(listaLivros);
       console.log();
       break;
     case 0:

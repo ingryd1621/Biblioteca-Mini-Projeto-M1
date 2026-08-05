@@ -4,8 +4,12 @@ export function realizarEmprestimo(listaLivros, titulo) {
 
     if (livro && livro.disponivel) {
         livro.disponivel = false;
+        console.log();
         console.log("Livro emprestado com sucesso!");
+        console.log();
     } else {
+        console.log();
         console.log("Livro indisponível!");
+        console.log();
     };
 }

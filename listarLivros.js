@@ -1,13 +1,15 @@
 export function listarLivros(listaLivros) {
-  console.log("====== LISTA DE LIVROS =====");
+  console.log();
+  console.log("========= LISTA DE LIVROS ========");
+  console.log();
 
-  listaLivros.forEach((livro, indice) => {
+  listaLivros.forEach((livro) => {
     console.log(
-        `Título: ${livro.titulo}
+        `Título: ${livro.titulo.toUpperCase()}
         Autor: ${livro.autor}
         Categoria: ${livro.categoria}
         Páginas: ${livro.paginas}
-        Status: ${livro.disponivel ? "Disponível" : "Emprestado"}`
-    );
+        Status: ${livro.disponivel ? "Disponível" : "Emprestado"}`);
+        console.log();
   });
 }

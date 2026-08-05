@@ -4,9 +4,13 @@ export function realizarDevolucao(listaLivros, tituloDevolvido) {
 
     if (livro) {
         livro.disponivel = true;
+        console.log();
         console.log("Livro devolvido com sucesso!");
+        console.log();
     } else {
+        console.log();
         console.log("Livro não encontrado!");
+        console.log();
     }
 
 }

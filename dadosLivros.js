@@ -21,7 +21,7 @@ export const dadosLivros = [
 		disponivel: true
 	},
 	{
-		titulo: 'Lógica de Programação',
+		titulo: 'Logica de Programacao',
 		autor: 'Marcos Silva',
 		categoria: 'Programação',
 		paginas: 320,
@@ -42,7 +42,7 @@ export const dadosLivros = [
 		disponivel: true
 	},
 	{
-		titulo: 'Node.js na Prática',
+		titulo: 'Node.js na Pratica',
 		autor: 'Eduardo Martins',
 		categoria: 'Programação',
 		paginas: 360,
